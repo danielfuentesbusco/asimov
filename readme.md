@@ -6,9 +6,11 @@ Part 2:​ Create a web client for the API you just created.
 
 # Instalation
 
+```
 composer install && composer update
 npm install
 npm run dev
+```
 
 # Dependencies
 
@@ -22,12 +24,13 @@ npm run dev
 
 # Testing
 
-For testing purposes use php artisan serve and access to /calendar endpoint.
+For testing purposes use ```php artisan serve``` and access to ```/calendar``` endpoint.
 
 # Routes
 
-php artisan route:list
+```php artisan route:list```
 
+```
 +--------+-----------+-------------------------------------+----------------------+------------------------------------------------------------------------+--------------+
 | Domain | Method    | URI                                 | Name                 | Action                                                                 | Middleware   |
 +--------+-----------+-------------------------------------+----------------------+------------------------------------------------------------------------+--------------+
@@ -41,3 +44,4 @@ php artisan route:list
 |        | GET|HEAD  | api/appointments/{appointment}/edit | appointments.edit    | App\Http\Controllers\AppointmentController@edit                        | api          |
 |        | GET|HEAD  | calendar                            | calendar             | App\Http\Controllers\AppointmentController@calendar                    | web          |
 +--------+-----------+-------------------------------------+----------------------+------------------------------------------------------------------------+--------------+
+```
